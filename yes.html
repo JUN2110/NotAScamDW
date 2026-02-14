@@ -9,17 +9,46 @@
 <body>
     <div class="container">
         <div>
-            <h1 class="header_text">Hoorayy!!!</h1>
+            <h1 class="header_text">Oh Wow YooohAAAiii!!!</h1>
         </div>
         <div class="gif_container">
             <img src="https://i.gifer.com/Pak.gif" alt="Cute animated illustration" style="margin-top: -60px;">
         </div>
         <!-- Adjusted position of the text element by 100px -->
-        <p class="text" style="margin-top: -30px;">You're now Prateek's gf</p>
+        <p class="text" style="max-width: 80%; margin: 10px auto; line-height: 1.4;">Thank you 宝贝 ❤️❤️❤️ Happy Valentines Day I Love You.</p>
+        <!-- <p class="text" style="margin-top: -30px;">Thank you my darling, I'm so grateful that you accepted, now let's open a pack !!</p> -->
     </div>
 
+
+    <!-- Ne pas oublier de mettre les images  -->
+<img src="https://i.postimg.cc/4KKLKNzm/imageyesgauche.jpg" class="photo-deco left">
+<img src="https://i.postimg.cc/Y44n4q1p/imageyesdroite.jpg" class="photo-deco right">
+
+<img src="https://i.postimg.cc/ZWssKyyv/imageyesgauche1.jpg" class="photo-deco left1">
+<img src="https://i.postimg.cc/hJJyJP9t/imageyesdroite1.jpg" class="photo-deco right1">
+
+<div class="rose-container"></div>
+
+<script>
+function createRose() {
+    const rose = document.createElement('div');
+    rose.classList.add('rose');
+    rose.innerHTML = '🌸'; // Tu peux aussi mettre 🌸 ou ❤️
+    rose.style.left = Math.random() * 100 + "vw";
+    rose.style.animationDuration = Math.random() * 3 + 2 + "s";
+    
+    document.querySelector('.rose-container').appendChild(rose);
+    
+    setTimeout(() => {
+        rose.remove();
+    }, 5000);
+}
+setInterval(createRose, 300); // Crée une rose toutes les 300ms
+</script>
+
+
     <!-- Note: Positioned at the bottom near the footbar -->
-    <p style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); text-align: center; color: #777;">Congratulations on this special moment! 🎉 Customize this page to capture and celebrate your unique love story. 💑💖</p>
+    <!-- <p style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); text-align: center; color: #777;">Congratulations on this special moment! 🎉 Customize this page to capture and celebrate your unique love story. 💑💖</p> -->
 
     <!-- Include any external scripts if needed -->
 </body>
